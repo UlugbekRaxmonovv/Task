@@ -1,0 +1,174 @@
+
+/* price */
+.price {
+  background-image: url("../../assets/images/price.png");
+  background-repeat: no-
+  repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+}
+
+
+.prices {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.price-title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  color: #091133;
+}
+
+.price-par {
+  max-width: 600px;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #6f7cb2;
+  margin-top: 20px;
+}
+
+.price-expensive {
+  margin-top: 40px;
+}
+
+.price-expensive h1 {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 66px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #222f65;
+}
+
+.price-expensive p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #37447e;
+}
+
+.price-btn {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.price-btn p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #5d6970;
+}
+
+.price-btn .button {
+  width: 189px;
+  height: 35.81px;
+  border: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  background-color: #111b47 !important;
+  color: #ffffff;
+  margin-top: 10px;
+  transition: all .2s linear;
+}
+.price-btn .button :active{
+  transform: scale(1.1);
+}
+
+/* price responsiv */
+@media (max-width: 1000px) {
+  .price-par {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 20px;
+  }
+
+  .price-expensive h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .price-expensive p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .price-btn button {
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding: 30px 0;
+  }
+
+  .price-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .price-par {
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .price-expensive h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .price-par {
+    max-width: 300px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .price-expensive h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .price-expensive p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .price-btn button {
+    width: 140px;
+    height: 28px;
+    font-size: 12px;
+  }
+}

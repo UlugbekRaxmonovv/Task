@@ -1,0 +1,122 @@
+/* About */
+.powerful {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+  gap: 20px; 
+}
+
+.powerful-content img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all 2s linear;
+}
+.powerful-content img:hover{
+  transform:scale(1.1);
+}
+.powerful-heading h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  color: #091133;
+}
+
+.powerful-par {
+  max-width: 645px;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #6f7cb2;
+  margin-top: 20px;
+}
+
+.powerful-btn {
+  width: 150px;
+  height: 40px; 
+  background-color: #111b47;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: all .3s linear;
+}
+
+.powerful-btn:active {
+  background-color: #37447e;
+  transform: scale(1.1);
+}
+
+
+/* Abouit responsiv */
+
+@media (max-width: 950px) {
+  .powerful {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 20px;
+    text-align: center; 
+  }
+
+  .powerful-heading h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .powerful-par {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .powerful-btn {
+    width: 100%; 
+    max-width: 200px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .powerful {
+    gap: 10px;
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+
+  .powerful-heading h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .powerful-par {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .powerful-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .powerful-btn {
+    width: 100%;
+    max-width: 150px;
+    font-size: 12px;
+    height: 36px;
+  }
+}
